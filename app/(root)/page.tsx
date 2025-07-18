@@ -1,11 +1,12 @@
 import React from 'react'
 
 export default function Page() {
+
   
 
   return (
     <>
-      <h1>Welcome to Nextjs</h1>
+     <h1 className='text-2xl'>HOME</h1>
     </>
   )
 }
