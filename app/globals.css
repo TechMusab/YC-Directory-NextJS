@@ -129,9 +129,15 @@
   @apply w-full h-[164px] rounded-[10px] object-cover;
 }
 
-
-
-
 @utility startup-card_skeleton {
   @apply w-full h-96 rounded-[22px] bg-zinc-400;
+}
+@utility tag-tri {
+  @apply before:content-[''] before:absolute before:top-2 before:left-2 before:border-t-[10px] before:border-t-black before:border-r-[10px] before:border-r-transparent after:content-[''] after:absolute after:bottom-2 after:right-2 after:border-b-[10px] after:border-b-black after:border-l-[10px] after:border-l-transparent;
+}
+@utility tag {
+  @apply bg-secondary px-6 py-3 font-work-sans font-bold rounded-sm uppercase relative tag-tri;
+}
+@utility category-tag {
+  @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-full;
 }
