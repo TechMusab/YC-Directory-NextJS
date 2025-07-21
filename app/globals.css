@@ -141,3 +141,15 @@
 @utility category-tag {
   @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-full;
 }
+@utility divider {
+  @apply border-dotted bg-zinc-400 max-w-4xl my-10 mx-auto;
+}
+@utility view_skeleton {
+  @apply bg-zinc-400 h-10 w-24 rounded-lg fixed bottom-3 right-3;
+}
+@utility view-container {
+  @apply flex justify-end items-center mt-5 fixed bottom-3 right-3;
+}
+@utility view-text {
+  @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-lg capitalize;
+}
