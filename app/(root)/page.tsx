@@ -4,6 +4,7 @@ import StartupCard from "../../components/StartupCard";
 import { STARTUPS_QUERY } from "@/sanity/lib/queries";
 import { StartupCardType } from "@/components/StartupCard";
 import { SanityLive, sanityFetch } from "@/sanity/lib/live";
+import { auth } from "@/auth";
 
 export default async function Page({
   searchParams,
@@ -13,6 +14,9 @@ export default async function Page({
   const { query } = await searchParams;
   const params={search :query || null}
 const {data:posts}= await sanityFetch({query:STARTUPS_QUERY,params})
+
+const session=await auth()
+console.log(session?.id)
 
   return (
     <>
