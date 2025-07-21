@@ -44,7 +44,7 @@ export type Author = {
   name?: string;
   username?: string;
   email?: string;
-  avatar?: string;
+  image?: string;
   bio?: string;
 };
 
